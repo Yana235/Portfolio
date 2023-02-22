@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="author" content="IAN TIZIANO MAIO">
+<link href="Estilo_Mapa_Imagenes.css" rel="stylesheet" type="text/css"  >
+<head>
+    <meta charset="UTF-8">
+    <title>Map_Images</title>
+    <p class="p1" style="font-size:40px; "align="center">IES LA VEREDA</p>
+</head>
+<body>
+
+<strong><p style="font-size:30px; font-family:Arial;"
+            align="center">Este es el plano del centro</p></strong>
+
+<p style="font-size:20px;" align="center">Si pinchas en las aulas 1.14,1.19<br>
+    y 1.22 te llevarán a una página en la que podrás ver ua imagen del aula<br>
+    podrás ver las imágenes del centro de cada zona</p><br>
+
+
+    <img class="uno" src="Plano_Centro.png" usemap="#mapa">
+
+
+    <map name="mapa">
+        <area shape="circle" coords="120,250,30" href="Aula_1.14.html" >
+        <area shape="circle" coords="340,250,30" href="Aula_1.19.html">
+        <area shape="circle" coords="480,250,30" href="Aula_1.22.html">
+
+    </map>
+
+
+</body>
+</html>

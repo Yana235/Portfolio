@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rellena tu Curriculum Vitae (CV)</title>
+</head>
+
+<body>
+<header>
+    <h1> Curriculum vitae </h1>
+    <h3> Rellena tu CV </h3>
+</header>
+<form name="formulario" method="post" action="./php/insertar_cv.php" enctype="multipart/form-data">
+<p> Nombre</p>
+<input type="text" name="Nombre" value="" size="20" maxlength="30"/>
+<p> Apellido </p>
+<input type="text" name="Apellido" value="" size="40" maxlength="80" />
+<p> Contraseña</p>
+<input type="password" name="Contraseña" value="" size="10" maxlength="10"/>
+<p> DNI</p>
+<input type="text" name="DNI" value="" size="5" maxlength="10" required/>
+<p> Sexo</p>
+<input type="radio" id="Hombre" name="Sexo" value="" checked/>
+    <label for="Hombre">Hombre </label><br><br>
+
+    <input type="radio" id="Mujer" name="Sexo" value=""  />
+    <label for="Mujer">Mujer </label><br><br>
+
+    <label>Incluir mi foto </label>
+    <input type="search" name="buscar foto">
+    <input type="file" name="adjunto archivo" accept=".jpg" multiple/>
+
+    <br><br> <input type="checkbox" id="Suscribirme al boletin de novedades" name="Suscribirme al boletin de notas" value="" checked="checked"
+>Suscribirme al boletin de novedades<br><br>
+    <input type="submit" name="guardar cambios" value="Guardar cambios">
+    <input type="reset" name="Borrar los datos introducidos" value="Borrar lso datos introducidos">
+
+
+</form>
+</body>
+</html>
